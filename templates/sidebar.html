@@ -1,0 +1,36 @@
+<aside class="sidebar left-sidebar">
+  <div id="mob-side-section">
+      <div class="mobile-header">
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+    <nav class="mobile-menu">
+      {{ range .Categories }}
+      <h2>{{ .Name }}</h2>
+      <ul>
+        {{ range .Pages }}
+          <li class="{{ if eq .Slug $.CurrentSlug }}active{{ end }}">
+            <a href="/{{ .Slug }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    </nav>
+  </div>
+
+  
+    <div id="normal-menu">
+      
+      {{ range .Categories }}
+    <h2>{{ .Name }}</h2>
+    <ul>
+      {{ range .Pages }}
+        <li class="{{ if eq .Slug $.CurrentSlug }}active{{ end }}">
+          <a href="/{{ .Slug }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  </div>
+
+</aside>

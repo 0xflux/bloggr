@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ .MetaDescription }}">
+    <meta property="og:title" content="{{ .MetaPropertyTitle }}">
+    <meta property="og:description" content="{{ .MetaPropertyDescription }}">
+    <meta property="og:url" content="{{ .MetaOgURL }}">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script defer src="/static/fontawesome-free-6.4.2-web/js/solid.js"></script>
+    <script defer src="/static/fontawesome-free-6.4.2-web/js/fontawesome.js"></script>
+
+    <script>
+    // some javascript to deal with the mobile friendly nav menu 
+    function toggleMenu() {
+        var menu = document.querySelector('.mobile-menu');
+        var sidebar = document.querySelector('.left-sidebar');
+        menu.classList.toggle('is-active');
+
+        if (menu.classList.contains('is-active')) {
+            sidebar.style.paddingRight = '20px';
+            sidebar.style.width = 'calc(100% - 20px)';
+        } else {
+            sidebar.style.paddingRight = '0';
+            sidebar.style.width = '100%';
+        }
+    }
+    </script>
+</head>

@@ -1,0 +1,15 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+/static/fontawesome*

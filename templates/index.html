@@ -1,0 +1,22 @@
+{{ template "header.html" . }}
+<body>
+    <div class="container">
+        
+          {{ template "sidebar.html" dict "Categories" .SidebarData.Categories "CurrentSlug" .CurrentSlug }}
+          
+        <main class="main-content">
+            <h1>{{ .Title }}</h1>
+            <p class="description">{{ .Description }}</p>
+            <hr />
+            {{ .Content }}
+
+            {{ template "footer.html" }}
+
+        </main>
+        
+        {{ template "sidebar-right.html" . }}
+
+    </div>
+
+</body>
+</html>
