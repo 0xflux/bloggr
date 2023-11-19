@@ -19,3 +19,7 @@ Instructions for use:
 - Add your favicon, putting the image in /static/images/
 
 If you like this project, please give me a follow or give the project a star!
+
+Here is an example of what you can create with Bloggr!
+
+<img width="1356" alt="image" src="https://github.com/0xflux/bloggr/assets/49762827/a5ded2fb-5124-4a0b-95e9-442dc9569aa2">
