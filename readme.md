@@ -13,6 +13,7 @@ Features:
 
 Instructions for use:
 
+- Clone this repo to your local disk 
 - Test with go run ./main.go and navigate to localhost:8080
 - Start editing the files in /markdown to see how you can customise your blog posts
 - Add your own colours and themes to the CSS file
